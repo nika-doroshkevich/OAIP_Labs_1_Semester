@@ -1,0 +1,22 @@
+Program Lab8_myv;
+
+{$APPTYPE CONSOLE}
+
+Var
+  i:Integer;
+  S,NewS:String;
+
+Begin
+  Readln(S);
+  NewS:='';
+  For i:=1 to Length(S) do
+    If (S[i]<>' ') and (S[i]<>',') and (S[i]<>'.') then
+      NewS:=NewS + S[i]
+    Else
+      Begin
+        Writeln(NewS);
+        NewS:='';
+      End;
+  Readln;
+End.
+ 
